@@ -3,10 +3,15 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+
+  define: {
+    process: {},
+  },
+
   build: {
     lib: {
       entry: "src/widget/index.ts",
-      name: "AiAssistant",
+      name: "ChatbotWidget", // REQUIRED
       fileName: () => "widget.js",
       formats: ["iife"],
     },
