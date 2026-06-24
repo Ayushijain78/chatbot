@@ -5,13 +5,13 @@ export default defineConfig({
   plugins: [react()],
 
   define: {
-    process: {},
+    "process.env.NODE_ENV": JSON.stringify("production"),
   },
 
   build: {
     lib: {
       entry: "src/widget/index.ts",
-      name: "ChatbotWidget", // REQUIRED
+      name: "ChatbotWidget",
       fileName: () => "widget.js",
       formats: ["iife"],
     },
