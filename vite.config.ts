@@ -10,9 +10,9 @@ export default defineConfig({
 
   build: {
     lib: {
-      entry: "src/widget/index.ts",
+      entry: "public/copilot-panel.js",
       name: "ChatbotWidget",
-      fileName: () => "widget.js",
+      fileName: () => "copilot-panel.js",
       formats: ["iife"],
     },
   },
