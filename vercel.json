@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/copilot-panel.js",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}

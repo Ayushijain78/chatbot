@@ -9,11 +9,7 @@ export default defineConfig({
   },
 
   build: {
-    lib: {
-      entry: "public/copilot-panel.js",
-      name: "ChatbotWidget",
-      fileName: () => "copilot-panel.js",
-      formats: ["iife"],
-    },
+    sourcemap: false,
+    minify: "esbuild",
   },
 });
