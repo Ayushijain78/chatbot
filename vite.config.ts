@@ -7,10 +7,4 @@ export default defineConfig({
   define: {
     "process.env.NODE_ENV": JSON.stringify("production"),
   },
-
-  build: {
-    // sourcemap: false,
-    // minify: "esbuild",
-  }
-  ,
 });
